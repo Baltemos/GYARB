@@ -17,6 +17,11 @@
     <background>background\bkg_Wall</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\Collision.gml</script>
+    <script>scripts\OnGround.gml</script>
+    <script>scripts\InBlock.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_floor</object>
