@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>health = 2;
+vsp = 0;
+hsp = -6;
+grav = 0.3;
 </string>
           </argument>
         </arguments>
@@ -72,6 +75,14 @@
           <argument>
             <kind>1</kind>
             <string>if(health == 0) instance_destroy();
+if(!OnGround())vsp += grav;
+if(place_meeting(x + sign(hsp), y, obj_floor)) hsp = -hsp;
+
+EnemyCollision();
+y += vsp;
+x += hsp;
+InBlock();
+
 </string>
           </argument>
         </arguments>
