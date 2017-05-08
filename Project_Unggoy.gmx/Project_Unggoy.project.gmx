@@ -21,6 +21,7 @@
     <script>scripts\Collision.gml</script>
     <script>scripts\OnGround.gml</script>
     <script>scripts\InBlock.gml</script>
+    <script>scripts\EnemyCollision.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
