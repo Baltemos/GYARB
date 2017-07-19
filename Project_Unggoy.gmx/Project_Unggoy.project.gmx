@@ -22,11 +22,11 @@
     <script>scripts\OnGround.gml</script>
     <script>scripts\InBlock.gml</script>
     <script>scripts\EnemyCollision.gml</script>
+    <script>scripts\notFall.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_floor</object>
-    <object>objects\obj_sword</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_magic</object>
   </objects>

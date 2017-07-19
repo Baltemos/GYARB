@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Variables
 grav = 0.3;
-movement = 5;
+movement = 3;
 jump = 9;
 hsp = 0;
 vsp = 0;
@@ -92,12 +92,14 @@ InBlock();
             <string>///Magic
 //Key checking
 //direction
+/*
 if(keyboard_check_pressed(vk_left)) dir = -1;
 if(keyboard_check_pressed(vk_right)) dir = 1;
 if(keyboard_check_pressed(ord('X'))){
     //Spawning it
     instance_create(x + (dir * 16), y - 8, obj_magic);
 }
+*/
 </string>
           </argument>
         </arguments>
