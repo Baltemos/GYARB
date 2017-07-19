@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Variables
 grav = 0.3;
-movement = 3;
+movement = 4;
 jump = 9;
 hsp = 0;
 vsp = 0;
@@ -58,11 +58,17 @@ dir = 1;
 //Inputs
 key_right = keyboard_check(vk_right);
 key_left = -keyboard_check(vk_left);
+key_up = -keyboard_check(vk_up);
+key_down = keyboard_check(vk_down);
 key_jump = keyboard_check_pressed(vk_up);
 //Reaction
 move = key_right + key_left;
 hsp = move * movement; //DirMove
-if(OnGround()) vsp = key_jump * -jump; //Jump
+if(OnGround() &amp;&amp; !onLadder()) vsp = key_jump * -jump; //Jump
+else if(onLadder()){
+    climb = key_up + key_down;
+    vsp = climb * movement;
+}
 else if(vsp &lt; 15) vsp += grav; //Grav
 Collision();
 //Set Speed aka do the things

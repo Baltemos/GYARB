@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>health = 2;
 vsp = 0;
-hsp = -1.5;
+hsp = -3;
 grav = 0.3;
 </string>
           </argument>

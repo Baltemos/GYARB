@@ -12,6 +12,7 @@
     <sprite>sprites\spr_SwordSwing</sprite>
     <sprite>sprites\spr_enemy</sprite>
     <sprite>sprites\spr_MagicBlue</sprite>
+    <sprite>sprites\spr_Ladder</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bkg_Wall</background>
@@ -23,15 +24,17 @@
     <script>scripts\InBlock.gml</script>
     <script>scripts\EnemyCollision.gml</script>
     <script>scripts\notFall.gml</script>
+    <script>scripts\onLadder.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_floor</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_magic</object>
+    <object>objects\obj_Ladder</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_Main</room>
+    <room>rooms\rm_Test</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
